@@ -1,5 +1,4 @@
 import express from "express";
-import http from "http";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import compression from "compression";
@@ -22,8 +21,6 @@ app.use(compression());
 app.use(cookieParser());
 app.use(bodyParser.json());
 
-const server = http.createServer(app);
-
 const mongoUrl = process.env.MONGO_URL;
 
 const connectDB = async () => {
@@ -38,6 +35,9 @@ const connectDB = async () => {
 
 app.use("/", router());
 
+app.get('/', (req,res) => {
+  res.send({ title: 'Books' });
+})
 //Connect to the database before listening
 connectDB().then(() => {
   app.listen(process.env.PORT, () => {
