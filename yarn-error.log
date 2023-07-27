@@ -1,0 +1,36 @@
+Arguments: 
+  /home/nekotin/.nvm/versions/node/v16.14.2/bin/node /home/nekotin/.node/corepack/yarn/1.22.15/bin/yarn.js add --dev typécript
+
+PATH: 
+  /home/nekotin/.vscode-server/bin/74f6148eb9ea00507ec113ec51c489d6ffb4b771/bin/remote-cli:/home/nekotin/.cargo/bin:/home/nekotin/.nvm/versions/node/v16.14.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WebDriver/bin/:/mnt/d/Download/cmder:/mnt/c/Users/ADMIN/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ADMIN/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/ADMIN/AppData/Roaming/npm:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2021.2.2/bin:/mnt/c/WebDriver/bin/:/mnt/d/Download/cmder:/mnt/c/Users/ADMIN/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ADMIN/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/ADMIN/AppData/Roaming/npm:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2021.2.2/bin:/mnt/c/WebDriver/bin/:/mnt/d/Download/cmder:/mnt/c/Program Files/Geth:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/ADMIN/AppData/Roaming/npm:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Cloudflare/Cloudflare WARP/:/mnt/c/MongoDB/bin:/mnt/d/Program/mpv-0.35.1:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/ADMIN/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/ADMIN/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/ADMIN/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ADMIN/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/WebDriver/bin:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2021.2.2/bin:/mnt/c/users/admin/appdata/roaming/python/python310/scripts:/mnt/c/users/admin/.local/bin:/mnt/c/Users/ADMIN/AppData/Roaming/npm:/mnt/c/Users/ADMIN/AppData/Local/Programs/mongosh/:/snap/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.14.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/typécript: Bad Request
+      at Request.params.callback [as _callback] (/home/nekotin/.node/corepack/yarn/1.22.15/lib/cli.js:66140:18)
+      at Request.self.callback (/home/nekotin/.node/corepack/yarn/1.22.15/lib/cli.js:140885:22)
+      at Request.emit (node:events:526:28)
+      at Request.<anonymous> (/home/nekotin/.node/corepack/yarn/1.22.15/lib/cli.js:141857:10)
+      at Request.emit (node:events:526:28)
+      at IncomingMessage.<anonymous> (/home/nekotin/.node/corepack/yarn/1.22.15/lib/cli.js:141779:12)
+      at Object.onceWrapper (node:events:645:28)
+      at IncomingMessage.emit (node:events:538:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
