@@ -24,10 +24,6 @@ app.use(bodyParser.json());
 
 const server = http.createServer(app);
 
-server.listen(process.env.PORT, () => {
-  console.log(`Server running on http://localhost:${process.env.PORT}/`);
-});
-
 const mongoUrl = process.env.MONGO_URL;
 
 const connectDB = async () => {
@@ -46,5 +42,6 @@ app.use("/", router());
 connectDB().then(() => {
   app.listen(process.env.PORT, () => {
     console.log("listening for requests");
+    console.log(`Server running on http://localhost:${process.env.PORT}/`);
   });
 });
